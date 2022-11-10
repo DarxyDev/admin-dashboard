@@ -54,11 +54,18 @@ body{
 }
 .nav-sm-container{
     width:var(--nav-width-sm);
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .nav-symbol {
+    display:block;
     fill:var(--col-nav-text);
     width:35px;
     height:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 #logo{
     fill:var(--col-nav-text);
