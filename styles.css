@@ -58,11 +58,14 @@ body{
     justify-content:center;
     align-items:center;
 }
+.nav-sm-container + div{
+    font-size: 1rem;
+}
 .nav-symbol {
     display:block;
     fill:var(--col-nav-text);
-    width:35px;
-    height:35px;
+    width:25px;
+    height:25px;
     display:flex;
     justify-content:center;
     align-items:center;
