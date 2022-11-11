@@ -18,7 +18,7 @@
 
 <body>
     <div class="nav-size"></div>
-    <div class="nav-size" id="nav">
+    <nav class="nav-size" id="nav-pop">
         <ul>
             <li>
                 <svg id="logo">
@@ -85,13 +85,38 @@
                 <div>Privacy</div>
             </li>
         </ul>
-    </div>
+    </nav>
     <div id="main-container">
         <div id="header">
-            <div id="h_search">search</div>
-            <div id="h_user">user</div>
-            <div id="h_user-greeing">greeting</div>
-            <div id="h_nav">nav</div>
+            <div id="h_search">
+                <svg class="symbol-default">
+                    <use href="#svg_search"></use>
+                </svg>
+                <input type="text">
+            </div>
+            <div id="h_user">
+                <svg class="symbol-default">
+                    <use href="#svg_bell"></use>
+                </svg>
+                <svg class="img-profile-sm">
+                    <use href="#svg_account-box"></use>
+                </svg>
+                John Smith
+            </div>
+            <div id="h_user-greeting">
+                <svg class="img-profile-lg">
+                    <use href="#svg_account-box"></use>
+                </svg>
+                <div id="greeting-cont">
+                    <div class="greeting">Hi there,</div>
+                    <div class="username">John Smith (@smithyJohn)</div>
+                </div>
+            </div>
+            <nav id="h_nav">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </nav>
         </div>
         <div id="content">
             <div id="cards-container">
@@ -119,7 +144,7 @@
                 <path
                     d="M22,3H2C0.91,3.04 0.04,3.91 0,5V19C0.04,20.09 0.91,20.96 2,21H22C23.09,20.96 23.96,20.09 24,19V5C23.96,3.91 23.09,3.04 22,3M22,19H2V5H22V19M14,17V15.75C14,14.09 10.66,13.25 9,13.25C7.34,13.25 4,14.09 4,15.75V17H14M9,7A2.5,2.5 0 0,0 6.5,9.5A2.5,2.5 0 0,0 9,12A2.5,2.5 0 0,0 11.5,9.5A2.5,2.5 0 0,0 9,7M14,7V8H20V7H14M14,9V10H20V9H14M14,11V12H18V11H14" />
             </symbol>
-            <symbol id="svg_history"  viewBox="0 0 24 24">
+            <symbol id="svg_history" viewBox="0 0 24 24">
                 <path
                     d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M17 13H11V7H12.5V11.5H17V13Z" />
             </symbol>
@@ -142,6 +167,14 @@
             <symbol id="svg_privacy" viewBox="0 0 24 24">
                 <path
                     d="M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z" />
+            </symbol>
+            <symbol id="svg_search" viewbox="0 0 24 24">
+                <path
+                    d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+            </symbol>
+            <symbol id="svg_bell" viewbox="0 0 24 24">
+                <path
+                    d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
             </symbol>
 
         </defs>
